@@ -4,7 +4,6 @@
 **Área:** Blue Team / SOC  
 **Categoría:** Detección y análisis de tráfico ICMP  
 **Entorno:** VMware — Red virtualizada de laboratorio  
-**Estado:** 🟢 Completado y verificado
 
 ---
 
@@ -292,11 +291,9 @@ Los archivos originales y las capturas utilizadas en el informe se encuentran or
 **Archivos principales:**
 
 - [Script Python — ping_me_lab.py](analysis/ping_me_lab.py)
-- [Captura de tráfico ICMP — PCAPNG](analysis/LAB-SOC-001-trafico-icmp.pcapng)
+- [Captura de tráfico ICMP — PCAPNG](analysis/trafico.pcapng)
 - [Regla personalizada — local.rules](configs/local.rules)
 
 ---
-
-**Estado final del laboratorio: 🟢 Completado y verificado.**
 
 [← Volver al índice SOC Home Lab](../../README.md)
