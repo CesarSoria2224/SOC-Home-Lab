@@ -126,7 +126,7 @@ La captura permitió identificar:
 
 Se verificó que los paquetes presentaban el patrón esperado para evaluar la regla personalizada de Suricata.
 
-**Archivo de evidencia:** [LAB-SOC-001-trafico-icmp.pcapng](analysis/LAB-SOC-001-trafico-icmp.pcapng)
+**Archivo de evidencia:** [LAB-SOC-001-trafico-icmp.pcapng](analysis/trafico.pcapng)
 
 ---
 
