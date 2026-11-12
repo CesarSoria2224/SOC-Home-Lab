@@ -1,0 +1,1 @@
+alert icmp any any -> any any (msg:"LAB-SOC-001 ICMP Echo Request con payload pequeno"; itype:8; icode:0; dsize:2; classtype:misc-activity; sid:1000001; rev:2;)
