@@ -1,16 +1,16 @@
 # 🛡️ SOC Home Lab
 
-**Laboratorios de ciberseguridad defensiva, monitoreo e investigación de eventos.**
+**Laboratorios de ciberseguridad defensiva, monitorización e investigación de eventos.**
 
-Este repositorio documentará prácticas realizadas en un entorno de laboratorio autorizado y aislado, con énfasis en las actividades de un **analista SOC de nivel inicial**: recopilación de evidencias, análisis de registros, investigación de alertas y conclusiones sustentadas.
+Este repositorio reúne prácticas realizadas en un entorno de laboratorio autorizado y aislado, con énfasis en el trabajo de un analista SOC: recopilación de evidencias, análisis de registros, investigación de alertas y conclusiones sustentadas.
 
-> **Estado del repositorio:** en construcción. Un laboratorio solo se marcará como finalizado cuando sus resultados hayan sido comprobados y documentados.
+> **Estado del repositorio:** en construcción. Los laboratorios se marcan como finalizados cuando cuentan con resultados comprobados y documentación.
 
 ## 🧪 Índice de laboratorios
 
 | ID | Laboratorio | Enfoque | Estado |
 | --- | --- | --- | --- |
-| LAB-SOC-001 | [Ping Me — Network Forensics & SOC Monitoring](labs/LAB-SOC-001-Ping-Me/README.md) | Tráfico ICMP, análisis PCAP y monitoreo con Wazuh | 🟡 En desarrollo |
+| LAB-SOC-001 | [Ping Me — Network Forensics & SOC Monitoring](labs/LAB-SOC-001-Ping-Me/README.md) | Tráfico ICMP, análisis PCAP, detección con Suricata y monitorización con Wazuh | 🟢 Finalizado y verificado |
 
 **Leyenda:** ⚪ Planificado · 🟡 En desarrollo · 🟢 Finalizado y verificado.
 
@@ -18,21 +18,26 @@ Este repositorio documentará prácticas realizadas en un entorno de laboratorio
 
 ```text
 SOC-Home-Lab/
-├── README.md                         # Presentación e índice de laboratorios
+├── README.md
 ├── labs/
 │   └── LAB-SOC-001-Ping-Me/
-│       ├── README.md                 # Registro del laboratorio en desarrollo
-│       ├── diagrams/README.md        # Arquitectura de laboratorio
-│       ├── screenshots/README.md     # Evidencia visual
-│       ├── configs/README.md         # Configuraciones no sensibles
-│       └── analysis/README.md        # Hallazgos y resultados
+│       ├── README.md                  # Informe y resultados del laboratorio
+│       ├── diagrams/README.md         # Topología documentada
+│       ├── screenshots/               # Capturas de evidencia
+│       ├── configs/local.rules        # Firma personalizada de Suricata
+│       └── analysis/
+│           ├── README.md
+│           ├── ping_me_lab.py         # Generador de tráfico ICMP de prueba
+│           └── trafico.pcapng         # Captura de paquetes
 └── templates/
-    └── LAB-TEMPLATE.md               # Plantilla para futuros laboratorios
+    └── LAB-TEMPLATE.md
 ```
 
 ## 🔎 Metodología de documentación
 
-Cada laboratorio mostrará su objetivo, alcance, infraestructura, herramientas, procedimiento reproducible, evidencias, interpretación SOC, limitaciones y conclusiones. No se publicarán credenciales, tokens, datos personales ni secretos de configuración.
+Cada laboratorio documenta su objetivo, entorno, procedimiento, evidencias, interpretación SOC y conclusiones. Las detecciones observadas no se presentan como incidentes confirmados sin evidencia adicional.
+
+No se publican credenciales, tokens, claves privadas ni secretos de configuración.
 
 ## ✍️ Publicaciones
 
